@@ -22,7 +22,7 @@ import { Row, Col } from "reactstrap";
 import team1 from "assets/img/theme/team-1-800x800.jpg";
 import team2 from "assets/img/theme/team-2-800x800.jpg";
 import team3 from "assets/img/theme/team-3-800x800.jpg";
-import team4 from "assets/img/theme/team-4-800x800.jpg";
+import team4 from "assets/img/theme/profilePic.jpg";
 
 class Typography extends React.Component {
   render() {
