@@ -26,7 +26,7 @@ import SimpleFooter from 'components/Footers/SimpleFooter.js';
 import ContactUs from 'components/extra/Contact';
 import ScrollButton from 'components/extra/ScrollButton';
 
-class Login extends React.Component {
+class Contact extends React.Component {
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
@@ -56,4 +56,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Contact;

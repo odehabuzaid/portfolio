@@ -21,9 +21,7 @@ import ProjectsCards from 'components/extra/ProjectsCards';
 import ScrollButton from 'components/extra/ScrollButton';
 // reactstrap components
 import { Card, CardBody, Container, Row, Col } from 'reactstrap';
-
 import MainNavbar from 'components/Navbars/MainNavbar.js';
-
 import MySkills from 'components/extra/MySkills';
 
 class Landing extends React.Component {
@@ -158,7 +156,7 @@ class Landing extends React.Component {
             </div>
             <br /> <br />
           </section>
-          <br />
+          <SimpleFooter/>
         </main>
       </>
     );
