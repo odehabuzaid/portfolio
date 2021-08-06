@@ -27,7 +27,6 @@ import {
   DropdownItem,
   DropdownToggle,
   UncontrolledDropdown,
-  Media,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -116,7 +115,7 @@ class MainNavbar extends React.Component {
                       <DropdownItem to='/profile-page' tag={Link}>
                         Profile
                       </DropdownItem>
-                      <DropdownItem to='/Contact-page' tag={Link}>
+                      <DropdownItem to='/contact-page' tag={Link}>
                         Contact
                       </DropdownItem>
                     </DropdownMenu>

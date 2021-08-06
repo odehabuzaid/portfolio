@@ -2,7 +2,7 @@ import React from 'react';
 
 // reactstrap components
 import { Button, Card, Container, Row, Col } from 'reactstrap';
-
+import { Link } from 'react-router-dom';
 // core components
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 /*import GitHubSearch from "components/extra/GitHubSearch";*/
@@ -85,8 +85,8 @@ class Profile extends React.Component {
                         <Button
                           className='float-right'
                           color='default'
-                          href='/Contact-page'
                           size='sm'
+                          to='/contact-page' tag={Link}
                         >
                           Message
                         </Button>
