@@ -4,7 +4,7 @@ import React from 'react';
 import { Button, Card, Container, Row, Col } from 'reactstrap';
 
 // core components
-import DemoNavbar from 'components/Navbars/DemoNavbar.js';
+import MainNavbar from 'components/Navbars/MainNavbar.js';
 /*import GitHubSearch from "components/extra/GitHubSearch";*/
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
 import profile from 'assets/img/theme/profilePic.jpg';
@@ -18,7 +18,7 @@ class Profile extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <MainNavbar />
         <main className='profile-page' ref='main'>
           <ScrollButton></ScrollButton>
           <section className='section-profile-cover section-shaped my-0'>

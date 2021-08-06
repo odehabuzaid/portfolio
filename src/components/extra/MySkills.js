@@ -1,5 +1,5 @@
 import React from 'react';
-import { Col, UncontrolledTooltip } from 'reactstrap';
+import { Col } from 'reactstrap';
 const MySkills = () => {
   const skills = [
     { src: 'HTML5.svg', name: 'HTML5' },
