@@ -22,7 +22,7 @@ import ScrollButton from 'components/extra/ScrollButton';
 // reactstrap components
 import { Card, CardBody, Container, Row, Col } from 'reactstrap';
 
-import DemoNavbar from 'components/Navbars/DemoNavbar.js';
+import MainNavbar from 'components/Navbars/MainNavbar.js';
 
 import MySkills from 'components/extra/MySkills';
 
@@ -36,7 +36,7 @@ class Landing extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <MainNavbar />
         <main ref='main'>
           <ScrollButton />
           <div className='position-relative'>

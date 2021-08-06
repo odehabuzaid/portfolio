@@ -15,19 +15,15 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
-import {
-  Container,
-  Row,
-  Col
-} from "reactstrap";
+import { Container, Row, Col } from 'reactstrap';
 
 // core components
-import DemoNavbar from "components/Navbars/DemoNavbar.js";
-import SimpleFooter from "components/Footers/SimpleFooter.js";
-import ContactUs from "components/extra/Contact";
+import MainNavbar from 'components/Navbars/MainNavbar.js';
+import SimpleFooter from 'components/Footers/SimpleFooter.js';
+import ContactUs from 'components/extra/Contact';
 import ScrollButton from 'components/extra/ScrollButton';
 
 class Login extends React.Component {
@@ -39,20 +35,20 @@ class Login extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
-        <main ref="main">
-        <ScrollButton/>
-          <section className="section section-shaped section-lg">
-            <div className="shape shape-style-1 bg-gradient-default">
-            </div>
-            <Container className="pt-lg-7">
-              <Row className="justify-content-center">
-                <Col lg="5">
-              <ContactUs/>
-               </Col>
-              </Row>
-            </Container>
+        <MainNavbar />
+        <main ref='main'>
+          <ScrollButton />
+          <section className='section section-shaped section-lg'>
+            <div className='shape shape-style-1 bg-gradient-default'></div>
           </section>
+          <br />
+          <Container className='pt-lg-9'>
+            <Row className='justify-content-center'>
+              <Col>
+                <ContactUs />
+              </Col>
+            </Row>
+          </Container>
         </main>
         <SimpleFooter />
       </>
