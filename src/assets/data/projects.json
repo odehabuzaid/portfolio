@@ -37,7 +37,7 @@
     "projectDescription": "Website Built with reactjs and ARGON design free template , the website show informations about me and my previous projects in code 201 , and current 301",
     "gitHubLink": "https://github.com/odehabuzaid/portfolio",
     "LiveVersionLink": "https://odehabuzaid.netlify.app/",
-    "tools": "React,Bootstrap,Aos,React-Scroll"
+    "tools": "React,Bootstrap,Aos,React-Scroll,EMAILJS"
   },
   {
     "imgSrc": "https://i.ibb.co/3vTSg9x/Buss-Mall.png",
