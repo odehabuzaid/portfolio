@@ -1,15 +1,23 @@
-import React from 'react';
+import React,{useState} from 'react';
 import emailjs from 'emailjs-com';
-import { Card,Form, CardBody,FormGroup, Container, Row, Col,InputGroup,InputGroupAddon ,InputGroupText ,Input ,Button  } from 'reactstrap';
+import { Card,Form, CardBody,FormGroup, Container, Row, Col,InputGroup,InputGroupAddon ,InputGroupText ,Input ,Button,UncontrolledAlert  } from 'reactstrap';
 
 export default function ContactUs() {
-    
+    const [showAlert, setAlert] = useState(false)
+    const clearForm = () => { 
+      setAlert(true)
+      console.log('hi')
+      document.getElementById("contact-form").reset();
+    }
   function sendEmail(e) {
     e.preventDefault();
 
     emailjs.sendForm('service_orpz7in', 'template_ms06dx3', e.target, 'user_nwjWlSXmtIAaLMYr6dhQe')
       .then((result) => {
           console.log(result.text);
+          if (result.text === 'OK'){
+            clearForm()
+          }
       }, (error) => {
           console.log(error.text);
       });
@@ -17,15 +25,25 @@ export default function ContactUs() {
   return (
       <section className="section section-lg pt-lg-0 section-contact-us">
       <Container>
+     
         <Row className="justify-content-center mt--300">
+      
           <Col lg="8">
+         {showAlert && <UncontrolledAlert color="success" fade={true}>
+          <span className="alert-inner--icon">
+            <i className="ni ni-like-2" />
+          </span>
+          <span className="alert-inner--text ml-1">
+            <strong>Success!</strong> Your Message recived , i will reply to you ASAP!
+          </span>
+        </UncontrolledAlert>} 
             <Card className="bg-gradient-secondary shadow">
               <CardBody className="p-lg-5">
                 <h4 className="mb-1">Want to work with Me?</h4>
                 <p className="mt-0">
                   Your project is very important.
                 </p>
-                <Form onSubmit={sendEmail}>
+                <Form id="contact-form" onSubmit={sendEmail}>
                 <FormGroup className="mt-5 true" >
                   <InputGroup className="input-group-alternative">
                     <InputGroupAddon addonType="prepend">
