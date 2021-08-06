@@ -20,7 +20,7 @@ ReactDOM.render(
         render={(props) => <Landing {...props} />}
       />
       <Route
-        path='/Contact-page'
+        path='/contact-page'
         exact
         render={(props) => <Contact {...props} />}
       />
