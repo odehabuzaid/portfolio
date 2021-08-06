@@ -34,7 +34,7 @@ import {
   Row,
   Col
 } from "reactstrap";
-import argonReact from "assets/img/brand/argon-react.png";
+import odehabuzaidLogo from "assets/img/brand/odehabuzaid.png";
 
 class Menus extends React.Component {
   render() {
@@ -69,7 +69,7 @@ class Menus extends React.Component {
                             <Link to="/">
                               <img
                                 alt="..."
-                                src={argonReact}
+                                src={odehabuzaidLogo}
                               />
                             </Link>
                           </Col>
@@ -158,7 +158,7 @@ class Menus extends React.Component {
                             <Link to="/">
                               <img
                                 alt="..."
-                                src={argonReact}
+                                src={odehabuzaidLogo}
                               />
                             </Link>
                           </Col>
