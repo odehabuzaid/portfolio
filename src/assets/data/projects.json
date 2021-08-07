@@ -7,20 +7,21 @@
     "LiveVersionLink": "https://vteam-201.github.io/PartHunt/",
     "tools": "HTML,JAVASCRIPT,CSS"
   },
-  {
-    "imgSrc": "https://i.ibb.co/vPm6htS/aboutME.png",
-    "projectTitle": "about ME",
-    "projectDescription": "webpage that quizzes the user on fun facts gives the user some basic information about who i am and where i came from.",
-    "gitHubLink": "https://github.com/odehabuzaid/aboutMe",
-    "LiveVersionLink": "https://odehabuzaid.github.io/aboutMe/",
-    "tools": "HTML,JAVASCRIPT,CSS"
-  },
+  
   {
     "imgSrc": "https://i.ibb.co/y5R0SBp/Cookie-Stand.png",
     "projectTitle": "Cookie Stand",
     "projectDescription": "website that calculates the number of cookies each location must make every day and the daily sales projections for each location that there is a cookie stand cafe",
     "gitHubLink": "https://github.com/odehabuzaid/cookie-stand",
     "LiveVersionLink": "https://odehabuzaid.github.io/cookie-stand/",
+    "tools": "HTML,JAVASCRIPT,CSS"
+  },
+  {
+    "imgSrc": "https://i.ibb.co/vPm6htS/aboutME.png",
+    "projectTitle": "about ME",
+    "projectDescription": "webpage that quizzes the user on fun facts gives the user some basic information about who i am and where i came from.",
+    "gitHubLink": "https://github.com/odehabuzaid/aboutMe",
+    "LiveVersionLink": "https://odehabuzaid.github.io/aboutMe/",
     "tools": "HTML,JAVASCRIPT,CSS"
   },
   {

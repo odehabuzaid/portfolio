@@ -4,9 +4,9 @@ import { Badge } from 'reactstrap';
 const ToolsBadge = (props) => {
       const toolsArray = props.tools.split(',');
   return (
-      toolsArray.map((tool) => {
+      toolsArray.map((tool,index) => {
         return (
-            <Badge color='primary' pill className='mr-1'>
+            <Badge key={index} color='primary' pill className='mr-1'>
                {tool}
             </Badge>
         ) 
