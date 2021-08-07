@@ -20,7 +20,7 @@ import React from 'react';
 // reactstrap components
 
 // core components
-import DemoNavbar from 'components/Navbars/DemoNavbar.js';
+import MainNavbar from 'components/Navbars/MainNavbar.js';
 import Hero from './IndexSections/Hero.js';
 import ContactUs from 'components/extra/Contact.js';
 
@@ -33,7 +33,7 @@ class Index extends React.Component {
   render() {
     return (
       <>
-        <DemoNavbar />
+        <MainNavbar />
         <main ref='main'>
           <Hero />
           <section className='section'>
