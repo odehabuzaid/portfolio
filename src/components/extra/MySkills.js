@@ -14,8 +14,8 @@ const MySkills = () => {
 
   return skills.map((skill, index) => {
     return (
-      <>
-        <Col lg='4' xs='4' className='mb-4'>
+  
+        <Col key={index} lg='4' xs='4' className='mb-4'>
           <img
             alt={skill.name}
             className='img-fluid d-inline-block'
@@ -24,7 +24,7 @@ const MySkills = () => {
             title={skill.name}
           />
         </Col>
-      </>
+
     );
   });
 };

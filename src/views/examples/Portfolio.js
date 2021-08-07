@@ -15,21 +15,21 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from 'react';
+import React, { useEffect } from 'react';
 import ill2 from 'assets/img/ill/ill-2.svg';
 import ProjectsCards from 'components/extra/ProjectsCards';
 import ScrollButton from 'components/extra/ScrollButton';
-// reactstrap components
+
 import { Card, CardBody, Container, Row, Col } from 'reactstrap';
 import MainNavbar from 'components/Navbars/MainNavbar.js';
 import MySkills from 'components/extra/MySkills';
-
-class Landing extends React.Component {
+class Portfolio extends React.Component {
   state = {};
   componentDidMount() {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
+
   }
   render() {
     return (
@@ -163,4 +163,4 @@ class Landing extends React.Component {
   }
 }
 import SimpleFooter from 'components/Footers/SimpleFooter.js';
-export default Landing;
+export default Portfolio;
