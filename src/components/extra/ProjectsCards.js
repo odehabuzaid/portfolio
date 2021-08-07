@@ -10,27 +10,28 @@ class ProjectsCards extends React.Component {
   }
   componentDidMount() {
     Aos.init({
-      duration : 2000
+      duration: 2000,
     });
   }
   render() {
     return (
       <>
-        {projectsData.map((element,index) => (
-          <Col  
-          key={index}
-          data-aos='slide-up'
-          data-aos-offset='250'
-          lg='4'
-          className='mb-3'>
+        {projectsData.map((element, index) => (
+          <Col
+            key={index}
+            data-aos='slide-up'
+            data-aos-offset='250'
+            lg='4'
+            className='mb-3'
+          >
             <Card className='card-lift--hover shadow border-0'>
               {/* <Card.Img  variant='top' src={element.imgSrc} alt={element.projectTitle}  /> */}
               <img
-                className="card-img-top"
+                className='card-img-top'
                 variant='top'
                 src={element.imgSrc}
                 alt={element.projectTitle}
-                style={{objectFit:'contain' }}
+                style={{ objectFit: 'contain' }}
               />
               <CardBody className='py-5'>
                 <h6 className='text-primary text-uppercase'>

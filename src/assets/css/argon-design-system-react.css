@@ -17047,5 +17047,11 @@ td.rdtYear:hover {
   margin-bottom: 0;
   flex: 1 1 auto;
   width: 1%; }
-
+  .switch-wrapper {
+    position: relative;
+  }
+  
+  .switch-wrapper > div {
+    position: absolute;
+  }
 /*# sourceMappingURL=argon-design-system-react.css.map */
