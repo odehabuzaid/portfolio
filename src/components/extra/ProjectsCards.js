@@ -26,6 +26,8 @@ class ProjectsCards extends React.Component {
             <Card className='card-lift--hover shadow border-0'>
               {/* <Card.Img  variant='top' src={element.imgSrc} alt={element.projectTitle}  /> */}
               <img
+                className="card-img-top"
+                variant='top'
                 src={element.imgSrc}
                 alt={element.projectTitle}
                 style={{objectFit:'contain' }}
