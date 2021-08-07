@@ -29,7 +29,6 @@ class Portfolio extends React.Component {
     document.documentElement.scrollTop = 0;
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
-
   }
   render() {
     return (
@@ -156,7 +155,7 @@ class Portfolio extends React.Component {
             </div>
             <br /> <br />
           </section>
-          <SimpleFooter/>
+          <SimpleFooter />
         </main>
       </>
     );

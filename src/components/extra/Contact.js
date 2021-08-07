@@ -45,10 +45,10 @@ export default function ContactUs() {
       );
   }
   return (
-    <section className='section section-lg pt-lg-0 section-contact-us'>
+    <section className='section section-lg pt-lg-0 section-contact-us' style={{paddingTop:"0px"}}>
       <Container>
         <Row className='justify-content-center mt--300'>
-          <Col lg='8'>
+          <Col >
             {showAlert && (
               <UncontrolledAlert color='success' fade={true}>
                 <span className='alert-inner--icon'>

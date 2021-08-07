@@ -15,13 +15,21 @@ class Profile extends React.Component {
     document.scrollingElement.scrollTop = 0;
     this.refs.main.scrollTop = 0;
   }
+   calculateMyAge = (dateOfBirth) => { 
+    let diff = Date.now() - dateOfBirth.getTime();
+    let age = new Date(diff); 
+  
+    return Math.abs(age.getUTCFullYear() - 1970);
+}
+
+
   render() {
     return (
       <>
         <MainNavbar />
         <main className='profile-page' ref='main'>
           <ScrollButton></ScrollButton>
-          <section className='section-profile-cover section-shaped my-0'>
+          <section className='section-profile-cover section-shaped pb-250'>
             {/* Circles background */}
             <div className='shape shape-style-1 shape-default alpha-4'>
               <span className='span-150' />
@@ -86,34 +94,21 @@ class Profile extends React.Component {
                           className='float-right'
                           color='default'
                           size='sm'
-                          to='/contact-page' tag={Link}
+                          to='/contact-page'
+                          tag={Link}
                         >
                           Message
                         </Button>
                       </div>
                     </Col>
                     <Col className='order-lg-1' lg='4'>
-                      {/*         <GitHubSearch/>*/}
-                      <div className='card-profile-stats d-flex justify-content-center'>
-                        <div>
-                          <span className='heading'>22</span>
-                          <span className='description'>Friends</span>
-                        </div>
-                        <div>
-                          <span className='heading'>10</span>
-                          <span className='description'>Photos</span>
-                        </div>
-                        <div>
-                          <span className='heading'>89</span>
-                          <span className='description'>Comments</span>
-                        </div>
-                      </div>
+                
                     </Col>
                   </Row>
                   <div className='text-center mt-5'>
                     <h3>
                       Odeh Abuzaid{' '}
-                      <span className='font-weight-light'>, 27</span>
+                      <span className='font-weight-light'>, {this.calculateMyAge(new Date(1990, 1, 14))}</span>
                     </h3>
                     <div className='h6 font-weight-300'>
                       <i className='ni location_pin mr-2' />
@@ -140,6 +135,24 @@ class Profile extends React.Component {
                           learning the development of a full-stack web
                           applications.
                         </p>
+                       
+                      <Col>
+                      <div className='card-profile-stats d-flex justify-content-center'>
+                          <img
+                            src='https://github-readme-stats.vercel.app/api/top-langs/?username=odehabuzaid'
+                          />
+                        
+                     
+                      </div>
+                        </Col>
+                        <Col>
+                        <div className='card-profile-stats justify-content-center' >
+                          <img
+                           className='card-img'
+                            src='https://github-readme-stats.vercel.app/api?username=odehabuzaid&count_private=true&show_icons=true&theme=buefy'
+                          />
+                      </div>
+                        </Col>
                       </Col>
                     </Row>
                   </div>

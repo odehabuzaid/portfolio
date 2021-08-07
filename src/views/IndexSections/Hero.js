@@ -15,18 +15,18 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
+import React from 'react';
 
 // reactstrap components
-import { Container, Row, Col } from "reactstrap";
-import reactWhite from "assets/img/brand/argon-react-white.png";
+import { Container, Row, Col } from 'reactstrap';
+import reactWhite from 'assets/img/brand/argon-react-white.png';
 
 class Hero extends React.Component {
   render() {
     return (
       <>
-        <div className="position-relative">
-          <section className="section section-hero section-shaped">
+        <div className='position-relative'>
+          <section className='section section-hero section-shaped'>
             {/* <div className="shape shape-style-1 shape-default">
               <span className="span-150" />
               <span className="span-50" />
@@ -46,44 +46,44 @@ class Hero extends React.Component {
                 <span className='span-50' />
                 <span className='span-100' />
             </div> */}
-             
-            <Container className="shape-container d-flex align-items-center py-lg">
-              <div className="col px-0">
-                <Row className="align-items-center justify-content-center">
-                  <Col className="text-center" lg="6">
+
+            <Container className='shape-container d-flex align-items-center py-lg'>
+              <div className='col px-0'>
+                <Row className='align-items-center justify-content-center'>
+                  <Col className='text-center' lg='6'>
                     <img
-                      alt="..."
-                      className="img-fluid"
+                      alt='...'
+                      className='img-fluid'
                       src={reactWhite}
-                      style={{ width: "200px" }}
+                      style={{ width: '200px' }}
                     />
-                    <p className="lead text-white ">
-                      Hello.. i am a software development student and this is my personal page.
+                    <p className='lead text-white '>
+                      Hello.. i am a software development student and this is my
+                      personal page.
                     </p>
-                  
-                                    <div className="btn-wrapper mt-5">
-                                        <p className=" text-white ">
-                                            use the menu above to navigate this website.
-                    </p>
+
+                    <div className='btn-wrapper mt-5'>
+                      <p className=' text-white '>
+                        use the menu above to navigate this website.
+                      </p>
                     </div>
-                    <div className="mt-5">
-                    </div>
+                    <div className='mt-5'></div>
                   </Col>
                 </Row>
               </div>
             </Container>
-            <div className="separator separator-bottom separator-skew zindex-100">
+            <div className='separator separator-bottom separator-skew zindex-100'>
               <svg
-                xmlns="http://www.w3.org/2000/svg"
-                preserveAspectRatio="none"
-                version="1.1"
-                viewBox="0 0 2560 100"
-                x="0"
-                y="0"
+                xmlns='http://www.w3.org/2000/svg'
+                preserveAspectRatio='none'
+                version='1.1'
+                viewBox='0 0 2560 100'
+                x='0'
+                y='0'
               >
                 <polygon
-                  className="fill-white"
-                  points="2560 0 2560 100 0 100"
+                  className='fill-white'
+                  points='2560 0 2560 100 0 100'
                 />
               </svg>
             </div>

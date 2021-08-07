@@ -14,17 +14,15 @@ const MySkills = () => {
 
   return skills.map((skill, index) => {
     return (
-  
-        <Col key={index} lg='4' xs='4' className='mb-4'>
-          <img
-            alt={skill.name}
-            className='img-fluid d-inline-block'
-            src={skill.src}
-            data-toggle='tooltip'
-            title={skill.name}
-          />
-        </Col>
-
+      <Col key={index} lg='4' xs='4' className='mb-4'>
+        <img
+          alt={skill.name}
+          className='img-fluid d-inline-block'
+          src={skill.src}
+          data-toggle='tooltip'
+          title={skill.name}
+        />
+      </Col>
     );
   });
 };
