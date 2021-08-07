@@ -28,7 +28,7 @@ class ProjectsCards extends React.Component {
               <img
                 src={element.imgSrc}
                 alt={element.projectTitle}
-                style={{ minWidth: '100%' }}
+                style={{objectFit:'cover' }}
               />
               <CardBody className='py-5'>
                 <h6 className='text-primary text-uppercase'>
