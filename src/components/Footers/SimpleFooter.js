@@ -73,19 +73,8 @@ class SimpleFooter extends React.Component {
                 <UncontrolledTooltip delay={0} target='tooltip837440414'>
                   add me
                 </UncontrolledTooltip>
-                <Button
-                  className='btn-icon-only rounded-circle ml-1'
-                  color='dribbble'
-                  href='#'
-                  id='tooltip829810202'
-                >
-                  <span className='btn-inner--icon'>
-                    <i className='fa fa-dribbble' />
-                  </span>
-                </Button>
-                <UncontrolledTooltip delay={0} target='tooltip829810202'>
-                  Follow
-                </UncontrolledTooltip>
+               
+              
                 <Button
                   className='btn-icon-only rounded-circle ml-1'
                   color='github'
