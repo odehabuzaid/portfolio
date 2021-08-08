@@ -118,6 +118,9 @@ class MainNavbar extends React.Component {
                       <DropdownItem to='/contact-page' tag={Link}>
                         Contact
                       </DropdownItem>
+                      <DropdownItem to='/how-to' tag={Link}>
+                        How-to
+                      </DropdownItem>
                     </DropdownMenu>
                   </UncontrolledDropdown>
                 </Nav>

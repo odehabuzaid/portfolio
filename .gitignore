@@ -225,26 +225,7 @@ $RECYCLE.BIN/
 
 # Visual Studio 2015/2017 cache/options directory
 .vs/
-CardsFooter.js
 portfolio.rar
-Register.js
-Alerts.js
-Tabs.js
-Progress.js
-Pills.js
-Pagination.js
-Modals.js
-Login.js
-Labels.js
-Inputs.js
-Icons.js
-Download.js
-Datepicker.js
-CustomControls.js
-GitHubSearch.js
-Buttons.js
-Carousel.js
-Menus.js
 examples
 RouterMap.js.
 # End of https://www.gitignore.io/api/node,macos,linux,windows,webstorm,visualstudiocode

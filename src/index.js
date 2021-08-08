@@ -9,7 +9,7 @@ import 'assets/scss/argon-design-system-react.scss?v1.1.0';
 import Portfolio from 'views/Portfolio.js';
 import Contact from 'views/Contact.js';
 import Profile from 'views/Profile.js';
-
+import Index from 'views/Index'
 ReactDOM.render(
   
   <BrowserRouter>
@@ -23,6 +23,10 @@ ReactDOM.render(
       <Route
         path='/contact-page'
         render={(props) => <Contact {...props} />}
+      />  
+      <Route
+        path='/how-to'
+        render={(props) => <Index {...props} />}
       />
     </Switch>
 
